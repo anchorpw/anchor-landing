@@ -1,0 +1,46 @@
+.container-fluid.container-block.overview(id="overview")
+    .container
+        h2.block-title Quick overview
+        p.block-subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum<br>purus vitae enim lacinia malesuada.
+        #carouselOverview.carousel.slide.carousel-fade(data-ride='carousel')
+            ol.carousel-indicators
+                li.active(data-target='#carouselOverview', data-slide-to='0') Simple & Minimal Design
+                li(data-target='#carouselOverview', data-slide-to='1') Best User Experience
+                li(data-target='#carouselOverview', data-slide-to='2') Ultra Level Functionality
+                li(data-target='#carouselOverview', data-slide-to='3') Super Fast Performance
+            .carousel-inner
+                .item.active
+                    .row
+                        .col-xs-offset-2.col-xs-8.col-md-offset-1.col-md-5.carousel-image__wrapper
+                            img.img-responsive.carousel-image(src='./images/img-carousel_1.svg', alt='First slide')
+                        .col-xs-5.item__caption-wrapper.hidden-xs.hidden-sm
+                            .carousel-caption
+                                h5.carousel-caption__title Simple & Minimal Design
+                                p.carousel-caption__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum purus vitae enim lacinia.
+                .item
+                    .row
+                        .col-xs-offset-2.col-xs-8.col-md-offset-1.col-md-5.carousel-image__wrapper
+                            img.img-responsive.carousel-image(src='./images/img-carousel_2.svg', alt='Second slide')
+                        .col-xs-5.item__caption-wrapper.hidden-xs.hidden-sm
+                            .carousel-caption
+                                h5.carousel-caption__title Best User Experience
+                                p.carousel-caption__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum purus vitae enim.
+                .item
+                    .row
+                        .col-xs-offset-2.col-xs-8.col-md-offset-1.col-md-5.carousel-image__wrapper.work-block
+                            img.img-responsive.carousel-image(src='./images/img-carousel_3.svg', alt='Third slide')
+                        .col-xs-5.item__caption-wrapper.hidden-xs.hidden-sm
+                            .carousel-caption
+                                h5.carousel-caption__title Ultra Level Functionality
+                                p.carousel-caption__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum purus vitae.
+                .item
+                    .row
+                        .col-xs-offset-2.col-xs-8.col-md-offset-1.col-md-5.carousel-image__wrapper
+                            img.img-responsive.carousel-image(src='./images/img-carousel_4.svg', alt='Fourth slide')
+                        .col-xs-5.item__caption-wrapper.hidden-xs.hidden-sm
+                            .carousel-caption
+                                h5.carousel-caption__title Super Fast Performance
+                                p.carousel-caption__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum purus.
+            .carousel__controls-wrapper
+                a.carousel-control-prev(href='#carouselOverview', role='button', data-slide='prev')
+                a.carousel-control-next(href='#carouselOverview', role='button', data-slide='next')

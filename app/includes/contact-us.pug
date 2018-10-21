@@ -1,0 +1,18 @@
+.container-fluid.container-block.contact-us(id="contactUs")
+    .container
+        h2.block-title Drop A Message
+        p.block-subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum<br>purus vitae enim lacinia malesuada.
+        form#formContactUs.form-contact
+            .row
+                .col-xs-12.col-sm-offset-2.col-sm-8.col-lg-offset-3.col-lg-6
+                    .row
+                        .col-xs-12.col-md-6
+                            input.form-control(type='text', placeholder='Name')
+                        .col-xs-12.col-md-6
+                            input.form-control(type='email', placeholder='Email')
+                        .col-xs-12
+                            textarea.form-control(placeholder='Message', rows='3')
+                            .text-center
+                                button#formIContactUsSubmit.btn.btn-primary(type='submit')
+        .formSuccess-wrapper#formContactUsSuccess
+            .formSuccess

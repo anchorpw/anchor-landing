@@ -1,0 +1,22 @@
+.container-fluid.features(id="features")
+    .container
+        h2.block-title Features
+        .row
+
+            mixin features-item(iconSrc, alt, itemTitle, itemText)
+                .col-xs-12.col-sm-6.col-lg-3
+                    .features-item
+                        .features-item__icon__background
+                            img.features-item__icon(src= iconSrc, alt= alt)
+                        .features-item__content-wrapper
+                            h3.features-item__header= itemTitle
+                            p.features-item__text= itemText
+
+            +features-item('images/icon-padlock.svg', 'icon padlock', 'Secure', 'Your private key only stored locally and protected with many layers of security.')
+            +features-item('images/icon-cube-molecule.svg', 'icon cube-molecule', 'ERC20 compatible', 'Full support for any ERC20 and ERC223 tokens on Ethereum network.')
+            +features-item('images/icon-cubes.svg', 'icon cubes', 'Multichain wallets', 'Our codebase is open source (iOS and early Android*) and audited by the security experts.')
+            +features-item('images/icon-incognito.svg', 'icon incognito', 'Anonymous', 'We will never access any of your personal information and Trust always keeps your data private and secure.')
+            +features-item('images/icon-compass.svg', 'icon compass', 'Explorers', 'Your private key only stored locally and protected with many layers of security.')
+            +features-item('images/icon-list.svg', 'icon list', 'Notifications', 'Full support for any ERC20 and ERC223 tokens on Ethereum network.')
+            +features-item('images/icon-wallet.svg', 'icon wallet', 'Simple', 'We make using assets simple, and fun. Securely store your assets and instantly transact with anyone in the world.')
+            +features-item('images/icon-electricity.svg', 'icon electricity', 'Instant', 'Our wallet is fast. We are sending transactions to different nodes. And it increases the speed of transaction processing.')

@@ -1,0 +1,157 @@
+doctype html
+html.no-js(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='Anchor Wallet', content='Ahchor wallet is a tool which can help you to manage you tokens is a different either blockchains')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Anchor Wallet
+        link(rel='apple-touch-icon', href='apple-touch-icon.png')
+        // Place favicon.ico in the root directory
+
+        // build:css styles/vendor.css
+        // bower:css
+        // endbower
+        // endbuild
+
+        // build:css styles/main.css
+        link(rel='stylesheet', href='styles/main.css')
+        // endbuild
+
+        // build:js scripts/vendor/modernizr.js
+        script(src='/bower_components/modernizr/modernizr.js')
+        // endbuild
+    body
+        <!--[if lt IE 10]>
+        p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        <![endif]-->
+
+        .container-fluid.header
+            .container
+                a(href='#')
+                    img.header__logo(src='images/logo.svg', alt='Anchor Wallet logo')
+                ul.list-inline.pull-right
+                    li.nav-item.hidden-xs.hidden-sm: a(href='#') Home
+                    li.nav-item.hidden-xs: a(href="#features" class="scrollLink") Features
+                    li.nav-item.hidden-xs: a(href="#overview" class="scrollLink") Overview
+                    li.nav-item.hidden-xs: a(href="#download" class="scrollLink") Get Anchor
+                    li.nav-item.hidden-xs: a(href="#team" class="scrollLink") Team
+                    li.nav-item: a(href="#contactUs" class="scrollLink") Contact us
+                    li.nav-item: button.btn.btn-primary(type='button') Download
+
+        block content
+
+        .container-fluid.footer
+            .container
+                .row
+                    .col-xs-12.col-md-push-6.col-md-6.col-lg-6
+                        .desktop-social-list.hidden-xs.hidden-sm.pull-right
+                            ul.list-inline.social-icons-list
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='8', height='16', viewbox='0 0 8 16')
+                                                path(fill='#989FC1', fill-rule='evenodd', d='M5.172 15.273h-3.22V7.635H.345V5.004h1.609v-1.58C1.953 1.277 2.86 0 5.442 0H7.59v2.633H6.248c-1.005 0-1.072.367-1.072 1.054l-.004 1.317h2.433L7.32 7.635H5.172v7.638z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='16', height='13', viewbox='0 0 16 13')
+                                                path(fill='#989FC1', fill-rule='evenodd', d='M13.461 2.136A3.1 3.1 0 0 0 14.771.41a5.8 5.8 0 0 1-1.893.758 2.909 2.909 0 0 0-2.174-.986c-1.645 0-2.979 1.397-2.979 3.12 0 .245.025.484.076.711-2.475-.13-4.67-1.371-6.14-3.26a3.228 3.228 0 0 0-.404 1.57c0 1.081.526 2.037 1.326 2.598a2.887 2.887 0 0 1-1.35-.39v.038c0 1.512 1.026 2.774 2.39 3.06-.25.073-.512.11-.785.11a2.82 2.82 0 0 1-.56-.056c.378 1.24 1.479 2.143 2.783 2.168A5.808 5.808 0 0 1 .65 11.144a8.163 8.163 0 0 0 4.567 1.401c5.48 0 8.476-4.755 8.476-8.88 0-.136-.002-.27-.008-.403a6.202 6.202 0 0 0 1.487-1.617 5.74 5.74 0 0 1-1.71.491z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='14', height='12', viewbox='0 0 14 12')
+                                                path(fill='#989FC1', fill-rule='nonzero', d='M.247 5.754l3.226 1.185 1.249 3.953c.08.254.394.347.603.18l1.798-1.444a.543.543 0 0 1 .654-.018l3.243 2.318c.224.16.54.04.596-.226L13.992.452a.378.378 0 0 0-.51-.426L.245 5.054a.373.373 0 0 0 .003.7zm4.47.226l6.17-3.845c.111-.069.225.083.13.172l-5.093 4.79a1.072 1.072 0 0 0-.327.639l-.173 1.3c-.023.174-.264.191-.312.023l-.667-2.372a.632.632 0 0 1 .271-.707z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='19', height='18', viewbox='0 0 19 18')
+                                                path(fill='#989FC1', fill-rule='evenodd', d='M.892 9.221c0 3.953 2.496 7.308 5.959 8.49.436.083.594-.193.594-.43 0-.213-.007-.775-.011-1.522-2.424.54-2.935-1.2-2.935-1.2-.397-1.034-.968-1.309-.968-1.309-.791-.555.06-.544.06-.544.874.064 1.334.923 1.334.923.778 1.367 2.04.972 2.536.743.08-.578.305-.972.554-1.196-1.935-.226-3.97-.994-3.97-4.423 0-.977.34-1.776.898-2.401-.09-.227-.389-1.136.085-2.368 0 0 .732-.241 2.396.917A8.143 8.143 0 0 1 9.605 4.6c.74.003 1.486.103 2.182.3 1.663-1.157 2.394-.916 2.394-.916.475 1.232.176 2.141.087 2.368.558.625.895 1.424.895 2.401 0 3.438-2.037 4.194-3.978 4.416.313.276.591.822.591 1.657 0 1.196-.01 2.161-.01 2.455 0 .24.157.517.599.43 3.46-1.186 5.953-4.537 5.953-8.49 0-4.942-3.901-8.948-8.714-8.948C4.794.273.892 4.279.892 9.22z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='12', height='16', viewbox='0 0 12 16')
+                                                path(fill='#989FC1', fill-rule='nonzero', d='M11.195 8.74c-.35-.46-.878-.774-1.585-.946.9-.465 1.295-1.254 1.187-2.368a2.362 2.362 0 0 0-.331-1.05 2.087 2.087 0 0 0-.748-.716 4.083 4.083 0 0 0-1.023-.413 7.98 7.98 0 0 0-1.268-.207V.727H6.032v2.249c-.242 0-.61.006-1.105.018V.727H3.532V3.04c-.2.006-.493.01-.88.01l-1.92-.01v1.506h1.006c.459 0 .728.208.806.624v2.634c.06 0 .109.003.145.01h-.145v3.689c-.048.312-.223.468-.525.468H1.013l-.28 1.68h1.811c.115 0 .281.001.498.004.218.003.38.005.49.005V16h1.395v-2.313c.253.006.622.01 1.105.01V16h1.395v-2.34c.495-.025.934-.07 1.318-.138a5.31 5.31 0 0 0 1.1-.317c.35-.144.643-.323.879-.537.235-.214.43-.486.584-.817a3.51 3.51 0 0 0 .294-1.147c.08-.85-.057-1.505-.407-1.964zM5.217 4.562l.353-.005.482-.01c.128-.004.3.004.517.025.217.02.4.048.549.082.149.034.312.091.49.17.18.079.322.175.429.288.107.113.198.257.272.432.075.175.112.375.112.602 0 .192-.027.367-.08.524a1 1 0 0 1-.241.396 2.49 2.49 0 0 1-.33.278 1.398 1.398 0 0 1-.433.19 7.909 7.909 0 0 1-.46.114 3.28 3.28 0 0 1-.49.056c-.197.01-.346.017-.447.02-.1.004-.24.004-.415 0a29.694 29.694 0 0 0-.308-.004V4.562zm3.76 6.51c-.057.143-.13.267-.22.373-.089.105-.207.199-.353.28a2.965 2.965 0 0 1-.424.196c-.137.05-.303.093-.496.13a6.261 6.261 0 0 1-1.033.117 11.24 11.24 0 0 1-.903.01 27.63 27.63 0 0 0-.33-.005V9.019c.047 0 .188-.003.424-.01.235-.006.428-.009.577-.009.148 0 .354.01.616.028.263.019.483.046.662.084.179.037.374.095.585.172.212.078.383.173.515.285.13.112.24.255.33.43.09.173.134.372.134.596 0 .175-.028.333-.085.476z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='10', height='13', viewbox='0 0 10 13')
+                                                path(fill='#989FC1', fill-rule='evenodd', d='M5.545.182c1.271 0 2.3.391 3.088 1.174.792.788 1.189 1.822 1.189 3.101 0 1.268-.408 2.294-1.223 3.076-.816.783-1.877 1.174-3.183 1.174H2.978v3.838H.395V.182h5.15zM2.978 6.608h1.874c.747 0 1.323-.183 1.728-.549.41-.37.616-.902.616-1.593 0-.697-.203-1.234-.608-1.611-.405-.366-.98-.548-1.728-.548H2.978v4.3z')
+
+                        .mobile-social-list.hidden-md.hidden-lg
+                            ul.list-inline.social-icons-list
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg.icon-facebook(xmlns='http://www.w3.org/2000/svg', width='10', height='21', viewbox='0 0 10 21')
+                                                path(fill='#989FC1', fill-rule='evenodd', d='M6.65 21H2.216V10.499H0V6.88h2.216V4.708C2.216 1.756 3.466 0 7.02 0H9.98v3.62H8.13c-1.383 0-1.475.505-1.475 1.45L6.65 6.88H10L9.608 10.5H6.649V21z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='20', height='17', viewbox='0 0 20 17')
+                                                path(fill='#989FC1', fill-rule='evenodd', d='M17.644 2.688A4.264 4.264 0 0 0 19.447.314a7.995 7.995 0 0 1-2.606 1.041A4.009 4.009 0 0 0 13.846 0c-2.265 0-4.101 1.921-4.101 4.291 0 .337.034.664.104.977C6.44 5.09 3.417 3.383 1.392.785a4.432 4.432 0 0 0-.555 2.158c0 1.488.724 2.802 1.825 3.573a3.981 3.981 0 0 1-1.859-.537v.053c0 2.08 1.413 3.815 3.293 4.208a3.85 3.85 0 0 1-1.083.15 3.89 3.89 0 0 1-.77-.075c.52 1.704 2.036 2.946 3.832 2.98A8.006 8.006 0 0 1 0 15.072 11.254 11.254 0 0 0 6.29 17c7.548 0 11.673-6.54 11.673-12.21 0-.187-.002-.372-.01-.555A8.532 8.532 0 0 0 20 2.012a7.914 7.914 0 0 1-2.356.676z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg.icon-telegram(xmlns='http://www.w3.org/2000/svg', width='19', height='17', viewbox='0 0 19 17')
+                                                path(fill='#989FC1', fill-rule='nonzero', d='M.336 8.151l4.378 1.68 1.694 5.6a.51.51 0 0 0 .819.253l2.44-2.044a.713.713 0 0 1 .888-.026l4.401 3.284a.512.512 0 0 0 .808-.32L18.99.639c.083-.411-.31-.754-.691-.603L.33 7.16c-.443.176-.44.821.006.992zm6.065.321l8.375-5.447c.15-.098.305.117.176.244L8.04 10.054c-.243.238-.4.558-.444.905l-.235 1.843a.214.214 0 0 1-.423.032l-.906-3.36a.914.914 0 0 1 .369-1.002z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewbox='0 0 24 24')
+                                                path(fill='#989FC1', fill-rule='evenodd', d='M0 12.304C0 17.74 3.438 22.352 8.207 23.98c.6.113.819-.267.819-.593 0-.292-.01-1.066-.017-2.092-3.337.743-4.042-1.65-4.042-1.65-.546-1.422-1.332-1.8-1.332-1.8-1.09-.764.082-.748.082-.748 1.205.087 1.838 1.268 1.838 1.268 1.071 1.88 2.81 1.337 3.493 1.022.109-.795.419-1.336.762-1.645-2.665-.31-5.467-1.365-5.467-6.08 0-1.344.468-2.442 1.236-3.302-.123-.312-.535-1.562.118-3.256 0 0 1.007-.332 3.3 1.26.957-.272 1.983-.409 3.003-.413 1.02.004 2.046.141 3.005.414 2.29-1.593 3.297-1.26 3.297-1.26.654 1.693.242 2.943.12 3.255.768.86 1.232 1.958 1.232 3.302 0 4.726-2.805 5.766-5.478 6.071.43.38.814 1.131.814 2.278 0 1.646-.014 2.973-.014 3.376 0 .33.216.712.825.591C20.565 22.347 24 17.74 24 12.304 24 5.51 18.627 0 11.999 0 5.373 0 0 5.509 0 12.304z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg.icon-bitcoin(xmlns='http://www.w3.org/2000/svg', width='15', height='21', viewbox='0 0 15 21')
+                                                path(fill='#989FC1', fill-rule='nonzero', d='M14.41 11.017c-.483-.63-1.21-1.064-2.184-1.3 1.24-.64 1.784-1.725 1.634-3.256-.05-.555-.201-1.037-.455-1.444a2.872 2.872 0 0 0-1.03-.985 5.629 5.629 0 0 0-1.41-.568c-.507-.13-1.089-.225-1.746-.284V0H7.298v3.092c-.333 0-.84.008-1.522.025V0H3.855v3.18c-.275.009-.678.013-1.21.013L0 3.18v2.07h1.385c.632 0 1.002.286 1.11.858V9.73c.083 0 .15.005.2.013h-.2v5.073c-.066.43-.308.644-.724.644H.387L0 17.77h2.495c.158 0 .387.002.686.005.3.005.524.007.674.007V21h1.921v-3.18c.35.008.857.012 1.522.012V21H9.22v-3.218a14.77 14.77 0 0 0 1.815-.19 7.321 7.321 0 0 0 1.516-.435 4.082 4.082 0 0 0 1.21-.738c.325-.295.593-.67.805-1.124.212-.454.347-.98.405-1.577.109-1.17-.079-2.07-.56-2.7zM6.175 5.272a78.952 78.952 0 0 0 1.15-.021c.176-.005.413.007.712.035.3.029.551.066.756.114.205.047.43.124.676.233.246.108.442.24.59.396.147.155.272.353.374.594.103.24.154.516.154.827 0 .264-.037.505-.11.722a1.376 1.376 0 0 1-.332.544c-.147.146-.3.274-.455.382a1.927 1.927 0 0 1-.596.262c-.241.066-.452.118-.632.155-.18.038-.406.064-.676.078-.27.014-.476.024-.615.029-.14.004-.33.004-.571 0a40.96 40.96 0 0 0-.424-.008V5.272zm5.178 8.951a1.84 1.84 0 0 1-.302.514 1.72 1.72 0 0 1-.486.384c-.201.112-.397.201-.585.27a4.552 4.552 0 0 1-.683.18 8.636 8.636 0 0 1-1.423.16 15.505 15.505 0 0 1-1.243.012l-.456-.006v-4.336c.066 0 .261-.005.585-.013.325-.009.59-.013.794-.013.205 0 .489.013.85.038.36.026.665.064.911.116.246.051.515.13.806.237.292.107.528.237.708.391.18.155.333.35.456.59s.185.514.185.822c0 .24-.04.457-.117.654z')
+                                li.list-inline-item
+                                    a(href='#')
+                                        .icon-wrapper
+                                            svg.icon-p(xmlns='http://www.w3.org/2000/svg', width='13', height='17', viewbox='0 0 13 17')
+                                                path(fill='#989FC1', fill-rule='evenodd', d='M7.092 0c1.752 0 3.17.538 4.253 1.614 1.092 1.084 1.638 2.505 1.638 4.265 0 1.743-.562 3.153-1.685 4.23-1.123 1.075-2.584 1.613-4.383 1.613H3.558V17H0V0h7.092zM3.558 8.836h2.58c1.029 0 1.822-.252 2.38-.754.565-.51.848-1.241.848-2.191 0-.959-.279-1.697-.837-2.215-.557-.503-1.35-.754-2.38-.754H3.559v5.914z')
+                    .col-xs-12.col-md-pull-6.col-md-6.col-lg-6
+                        ul.list-inline
+                            li.list-inline-item
+                                a(href='#') @Anchor.pw
+                            li.list-inline-item
+                                a(href='#') Terms
+                            li.list-inline-item
+                                a(href='#') Privacy
+                            li.list-inline-item
+                                .dropdown
+                                    .select
+                                        span English
+                                        i.fa.fa-chevron-left
+                                    input(type='hidden', name='gender')
+                                    ul.dropdown-menu
+                                        li#english English
+                                        li#russian Russian
+                                        li#chinese 中文
+
+        // Google Analytics script must be after this comment
+
+        // build:js scripts/vendor.js
+        // bower:js
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/modernizr/modernizr.js')
+        // endbower
+        // endbuild
+
+        // build:js scripts/plugins.js
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
+        // endbuild
+
+        // build:js scripts/main.js
+        script(src='scripts/main.js')
+        // endbuild
